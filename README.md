@@ -59,6 +59,16 @@
 
 <br>
 
+## Capturas de pantalla / Capturas de Video
+
+<br>
+
+ - **Principal**
+
+![start_controlVNC](https://github.com/user-attachments/assets/dfe08af7-d176-4e6c-b940-b9d3e47430d2)
+
+<br>
+
 <div align="center">
     <img src="https://raw.githubusercontent.com/Less-dev/gifs/master/DIVIDERS/text_red_divider_09.gif">
     <img src="https://raw.githubusercontent.com/Less-dev/gifs/master/DIVIDERS/text_red_divider_10.gif">
