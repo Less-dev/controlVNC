@@ -1,4 +1,5 @@
 #include "SideBar.h"
+#include <iostream>
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 #include <FL/Fl_Button.H>
@@ -12,14 +13,27 @@ SideBar::SideBar(int parent_window_x, int parent_window_y, int parent_window_w, 
 
     // Botones
     button1 = new Fl_Button(10, 20, 40, 40, "@+");
-    button1->tooltip("Botón 1");
+    button1->tooltip("Iniciar dispositivo");
     button1->box(FL_UP_BOX);
+    button1->callback(Start);
 
     button2 = new Fl_Button(10, 80, 40, 40, "@fileopen");
-    button2->tooltip("Botón 2");
+    button2->tooltip("Detener dispositivo");
     button2->box(FL_UP_BOX);
+    button2->callback(SwitchOff);
 
     this->end();
+}
+
+
+// Actions 
+
+void SideBar::Start(Fl_Widget* widget, void* data) {
+    std::cout << "Iniciando.." << std::endl;
+}
+
+void SideBar::SwitchOff(Fl_Widget* widget, void* data) {
+    std::cout << "APAGANDO..." << std::endl;
 }
 
 void SideBar::update_position(int x, int y, int w, int h) {

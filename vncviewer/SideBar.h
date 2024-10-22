@@ -14,7 +14,9 @@ protected:
 private:
     Fl_Button* button1;
     Fl_Button* button2;
-    void setTransparency(int percentage);
+    static void Start(Fl_Widget* widget, void* data);
+    static void SwitchOff(Fl_Widget* widget, void* data);
+
 };
 
 #endif // SIDEBAR_H
